@@ -18,10 +18,16 @@ header .container {
 
 #profile > div {
   max-width: 384px;
+  min-width: 0;
 }
 
 #profile br {
   display: none;
+}
+
+#profile p {
+  font: var(--text-md);
+  overflow-wrap: break-word;
 }
 
 #profile img {
