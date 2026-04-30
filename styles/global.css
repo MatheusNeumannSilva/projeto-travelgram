@@ -25,6 +25,11 @@ body {
   background-color: var(--background-color);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -39,8 +44,25 @@ a:hover {
   padding-inline: 32px;
   max-width: 1280px;
   margin-inline: auto;
+  width: 100%;
 }
 
 .bg-surface-color {
   background-color: var(--surface-color);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --text-lg: bold 24px/125% var(--font-family);
+  }
+
+  .container {
+    padding-inline: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-inline: 16px;
+  }
 }

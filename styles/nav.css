@@ -4,6 +4,7 @@ nav {
   align-items: center;
   line-height: 0;
   padding-block: 20px;
+  gap: 24px;
 }
 
 nav ul {
@@ -14,11 +15,17 @@ nav ul {
   padding-block: 8px;
 }
 
+#logo img {
+  width: 162px;
+}
+
 nav ul li:last-child img {
   width: 40px;
   height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-profile p {
+#profile p {
   font: var(--text-md);
 }
